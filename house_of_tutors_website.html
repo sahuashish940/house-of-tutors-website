@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="House Of Tutors connects parents with home tutors in Guna and Indore, Madhya Pradesh. Personalized tuition for Pre-Nursery to Class 12.">
+<title>House Of Tutors | Home Tuition in Guna & Indore</title>
+<style>
+:root{--navy:#12345a;--blue:#2463a6;--sky:#eaf3fc;--ink:#172638;--muted:#64748b;--line:#e3eaf2;--white:#fff;--gold:#f5b942}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--navy);font-weight:800;letter-spacing:.3px}
+.logo{width:45px;height:45px;border-radius:13px;background:var(--navy);color:white;display:grid;place-items:center;font-size:23px}
+.brand small{display:block;font-size:10px;letter-spacing:1.3px;color:var(--muted);font-weight:700}
+nav{display:flex;gap:23px;font-size:14px;font-weight:650;color:#334155}
+nav a:hover{color:var(--blue)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:10px;background:var(--blue);color:white;font-weight:750;border:0;cursor:pointer}
+.menu{display:none;background:white;border:1px solid var(--line);border-radius:9px;padding:8px 11px;font-size:20px}
+.hero{background:linear-gradient(120deg,#102f53 0%,#1d548b 65%,#2c70ad 100%);color:white;padding:82px 0 76px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#c6ddf5;font-weight:800}
+h1{font-size:clamp(38px,5.2vw,61px);line-height:1.08;letter-spacing:-1.7px;margin:17px 0}
+.hero p{font-size:18px;color:#e2edf8;max-width:580px;margin:0 0 27px}
+.btn-light{background:white;color:var(--navy)}.btn-outline{background:transparent;border:1px solid #b9d3ed;color:white;margin-left:9px}
+.hero-note{margin-top:23px;font-size:13px;color:#d3e4f5}
+.hero-card{background:white;color:var(--ink);border-radius:22px;padding:28px;box-shadow:0 25px 70px #061b3440}
+.hero-card h3{margin:0 0 5px;font-size:22px;color:var(--navy)}.hero-card>p{font-size:14px;color:var(--muted);margin:0 0 18px}
+.city-pill{display:flex;align-items:center;justify-content:space-between;padding:14px 15px;border:1px solid var(--line);border-radius:12px;margin-top:10px;font-weight:750}
+.city-pill span:last-child{color:var(--blue);font-size:13px}
+section{padding:76px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}
+.kicker{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:var(--blue);font-weight:850}
+h2{font-size:clamp(28px,3.5vw,39px);line-height:1.2;color:var(--navy);margin:10px 0}
+.section-head p{color:var(--muted);margin:10px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:25px;border:1px solid var(--line);border-radius:17px;background:white}
+.card-icon{width:45px;height:45px;display:grid;place-items:center;border-radius:13px;background:var(--sky);font-size:22px}
+.card h3{color:var(--navy);margin:15px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}
+.soft{background:#f6f9fd}.split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.checks{padding:0;list-style:none}.checks li{padding:9px 0;color:#405268}.checks li:before{content:"✓";display:inline-grid;place-items:center;width:23px;height:23px;background:#e4f4eb;color:#16834a;border-radius:50%;font-weight:900;margin-right:10px}
+.city-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.city{border-radius:18px;padding:28px;background:linear-gradient(145deg,#12345a,#286aa7);color:white;min-height:190px}
+.city h3{font-size:25px;margin:0 0 6px}.city p{color:#dbe9f7;margin:0 0 18px}
+.city a{font-weight:750;text-decoration:underline;text-underline-offset:4px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-radius:15px;background:#fff;border:1px solid var(--line)}
+.step b{font-size:12px;color:var(--blue);letter-spacing:1px}.step h3{margin:7px 0;color:var(--navy)}
+.cta{background:var(--navy);color:white;border-radius:22px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta h2{color:white;margin:0 0 8px}.cta p{color:#d8e6f4;margin:0}
+form{display:grid;gap:13px}label{font-size:13px;font-weight:750;color:#334155}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d8e1ec;border-radius:10px;font:inherit;background:white;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.form-wrap{max-width:760px;margin:auto;background:white;border:1px solid var(--line);padding:28px;border-radius:18px}
+.form-help{font-size:12px;color:var(--muted)}
+footer{background:#0c223c;color:#d7e4f1;padding:45px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer-title{font-weight:850;color:white;font-size:19px}.footer-grid p,.footer-grid a{font-size:14px;color:#c0d0df}
+.copyright{border-top:1px solid #ffffff24;margin-top:28px;padding-top:18px;font-size:12px;color:#a9bdcf}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#168a50;color:white;padding:13px 17px;border-radius:50px;font-weight:800;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:800px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;gap:15px}.nav.open nav{display:flex}.menu{display:block}.nav-cta{display:none}.hero{padding:58px 0}.hero-grid,.split{grid-template-columns:1fr}.hero-grid{gap:30px}.cards,.steps{grid-template-columns:1fr}.city-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){section{padding:55px 0}.hero h1{font-size:39px}.btn{width:100%;margin:5px 0}.btn-outline{margin-left:0}.form-grid{grid-template-columns:1fr}.form-wrap{padding:19px}.cta{padding:28px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav" id="nav">
+  <a class="brand" href="#home"><span class="logo">H</span><span>HOUSE OF TUTORS<small>BETTER LEARNING. BETTER RESULTS.</small></span></a>
+  <nav>
+   <a href="#home">Home</a><a href="#services">Our Services</a><a href="#parents">For Parents</a><a href="#tutors">For Tutors</a><a href="#locations">Locations</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="nav-cta" href="#contact">Enquire Now</a><button class="menu" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Open menu">☰</button>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div><div class="eyebrow">Personalized home tuition • Guna & Indore</div>
+   <h1>The Right Tutor.<br>A Brighter Future.</h1>
+   <p>Helping students learn with confidence through personalized home tuition and the right teacher for every learning need.</p>
+   <a class="btn btn-light" href="#contact">Find a Home Tutor</a><a class="btn btn-outline" href="#tutors">Join as a Tutor</a>
+   <div class="hero-note">Pre-Nursery to Class 12 &nbsp;•&nbsp; CBSE, ICSE & MP Board</div>
+  </div>
+  <div class="hero-card"><h3>Find tuition in your city</h3><p>Choose your location to get started.</p>
+   <a class="city-pill" href="#contact"><span>📍 Guna, Madhya Pradesh</span><span>Enquire →</span></a>
+   <a class="city-pill" href="#contact"><span>📍 Indore, Madhya Pradesh</span><span>Enquire →</span></a>
+   <p style="margin-top:18px">One-to-one attention • Learning support • Parent communication</p>
+  </div>
+ </div>
+</section>
+<section id="services">
+ <div class="container"><div class="section-head"><div class="kicker">What we offer</div><h2>Learning support that fits every student</h2><p>We help parents find suitable tutors based on the student's class, subjects, board and preferred location.</p></div>
+  <div class="cards">
+   <article class="card"><div class="card-icon">👩‍🏫</div><h3>Personalized Home Tuition</h3><p>One-to-one learning support designed around a student's pace, strengths and areas for improvement.</p></article>
+   <article class="card"><div class="card-icon">📚</div><h3>School & Exam Preparation</h3><p>Academic support for school subjects, regular practice, revision and exam preparation.</p></article>
+   <article class="card"><div class="card-icon">🎯</div><h3>Suitable Tutor Matching</h3><p>We consider class, subject, board, locality and tuition preferences when matching enquiries with tutors.</p></article>
+  </div>
+ </div>
+</section>
+<section class="soft" id="parents">
+ <div class="container split">
+  <div><div class="kicker">For parents</div><h2>Find the right learning support for your child</h2><p style="color:var(--muted)">Tell us what your child needs. Our team will help you explore suitable home tuition options in Guna or Indore.</p>
+   <ul class="checks"><li>Pre-Nursery to Class 12</li><li>CBSE, ICSE and MP Board</li><li>Multiple subjects and academic levels</li><li>Home tuition enquiries for your locality</li><li>Discuss your requirements before starting</li></ul>
+   <a class="btn" href="#contact">Enquire for a Tutor</a>
+  </div>
+  <div class="card"><div class="card-icon">💡</div><h3>How it works</h3><div class="steps" style="grid-template-columns:1fr">
+   <div class="step"><b>STEP 01</b><h3>Share your requirement</h3><p>Class, subjects, board, location and preferred timing.</p></div>
+   <div class="step"><b>STEP 02</b><h3>Discuss suitable options</h3><p>We follow up about tutors matching your requirement.</p></div>
+   <div class="step"><b>STEP 03</b><h3>Move forward</h3><p>Discuss the arrangement and next steps with our team.</p></div>
+  </div></div>
+ </div>
+</section>
+<section id="tutors">
+ <div class="container split">
+  <div><div class="kicker">For teachers</div><h2>Turn your teaching skills into opportunities</h2><p style="color:var(--muted)">Join the House Of Tutors network to hear about teaching requirements that may match your subjects, qualifications and preferred area.</p>
+   <ul class="checks"><li>Share your education and experience</li><li>Select preferred classes and subjects</li><li>Choose your preferred city and localities</li><li>Get considered for relevant teaching enquiries</li></ul>
+   <a class="btn" href="#contact">Register as a Tutor</a>
+  </div>
+  <div class="card"><div class="card-icon">✍️</div><h3>Keep your tutor profile ready</h3><p>Have your updated education details, teaching experience, subjects, preferred classes, locality and contact number ready when registering.</p></div>
+ </div>
+</section>
+<section class="soft" id="locations">
+ <div class="container"><div class="section-head"><div class="kicker">Where we serve</div><h2>One learning partner. Two cities.</h2><p>House Of Tutors supports home tuition enquiries in both Guna and Indore, Madhya Pradesh.</p></div>
+  <div class="city-grid">
+   <div class="city"><h3>Guna</h3><p>Home tuition enquiries across Guna and nearby areas.</p><a href="#contact">Enquire for Guna →</a></div>
+   <div class="city"><h3>Indore</h3><p>Home tuition enquiries across Indore and nearby areas.</p><a href="#contact">Enquire for Indore →</a></div>
+  </div>
+ </div>
+</section>
+<section id="contact">
+ <div class="container"><div class="section-head"><div class="kicker">Get in touch</div><h2>Tell us what you are looking for</h2><p>Share a few details and contact House Of Tutors directly on WhatsApp.</p></div>
+  <div class="form-wrap">
+   <form id="enquiry">
+    <div class="form-grid">
+     <div><label for="name">Your name *</label><input id="name" required placeholder="Enter your name"></div>
+     <div><label for="phone">Mobile number *</label><input id="phone" required inputmode="tel" placeholder="Enter mobile number"></div>
+     <div><label for="role">I am a *</label><select id="role"><option>Parent / Student</option><option>Teacher / Tutor</option></select></div>
+     <div><label for="city">Preferred city *</label><select id="city"><option>Guna</option><option>Indore</option></select></div>
+     <div><label for="class">Class / Teaching level</label><input id="class" placeholder="e.g. Class 8"></div>
+     <div><label for="subject">Subject(s)</label><input id="subject" placeholder="e.g. Maths, Science"></div>
+    </div>
+    <div><label for="message">Additional requirements</label><textarea id="message" placeholder="Board, locality, preferred timing or other details"></textarea></div>
+    <button class="btn" type="submit">Send Enquiry on WhatsApp</button>
+    <div class="form-help">Your message will open in WhatsApp for you to review and send. No details are submitted automatically.</div>
+   </form>
+  </div>
+ </div>
+</section>
+<section style="padding-top:0"><div class="container"><div class="cta"><div><h2>Let's make learning better.</h2><p>Connect with House Of Tutors for Guna and Indore.</p></div><a class="btn btn-light" href="#contact">Start an Enquiry</a></div></div></section>
+</main>
+<footer>
+ <div class="container"><div class="footer-grid">
+  <div><div class="footer-title">HOUSE OF TUTORS</div><p>Better Learning. Better Results.<br>Personalized home tuition in Guna & Indore, Madhya Pradesh.</p></div>
+  <div><div class="footer-title">Explore</div><p><a href="#services">Our Services</a></p><p><a href="#parents">For Parents</a></p><p><a href="#tutors">For Tutors</a></p></div>
+  <div><div class="footer-title">Contact</div><p>Guna: <a href="tel:8962210581">8962210581</a></p><p>Indore: <a href="tel:9407274681">9407274681</a></p><p><a href="#contact">Send an enquiry</a></p></div>
+ </div><div class="copyright">© <span id="year"></span> House Of Tutors. All rights reserved.</div></div>
+</footer>
+<a class="whatsapp" href="https://wa.me/918962210581" target="_blank" rel="noopener">WhatsApp Us</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('enquiry').addEventListener('submit',function(e){
+ e.preventDefault();
+ const val=id=>document.getElementById(id).value.trim();
+ const msg=`Hello House Of Tutors,%0A%0AName: ${encodeURIComponent(val('name'))}%0AMobile: ${encodeURIComponent(val('phone'))}%0AI am: ${encodeURIComponent(val('role'))}%0ACity: ${encodeURIComponent(val('city'))}%0AClass/Level: ${encodeURIComponent(val('class'))}%0ASubjects: ${encodeURIComponent(val('subject'))}%0ARequirements: ${encodeURIComponent(val('message'))}`;
+ const destination = val('city') === 'Indore' ? '919407274681' : '918962210581';
+ window.open('https://wa.me/'+destination+'?text='+msg,'_blank','noopener');
+});
+</script>
+</body></html>
